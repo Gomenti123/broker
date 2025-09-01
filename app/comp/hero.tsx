@@ -21,15 +21,15 @@ const Hero = () => {
            <div className='w-full flex justify-center'> 
             <div className='border flex justify-between items-center p-5 w-full md:w-[70%] h-[100px] rounded-[15px]'>
                 <div>
-                    <p className='text-green-500 font-semibold text-[25px]'>$250,000</p>
+                    <p className='text-green-500 font-semibold text-[22px] md:text-[25px]'>$250,000</p>
                     <p className='text-neutral-600 text-[12px]'>Active Traders</p>
                 </div>
                 <div>
-                    <p className='text-[#29b1c0] font-semibold text-[25px]'>$250,000+</p>
+                    <p className='text-[#29b1c0] font-semibold  text-[22px] md:text-[25px]'>$250,000+</p>
                     <p className='text-neutral-600 text-[12px]'>Active Trades</p>
                 </div>
                 <div>
-                    <p className='text-[#ce1cce] font-semibold text-[25px]'>$250,000</p>
+                    <p className='text-[#ce1cce] font-semibold text-[22px] md:text-[25px]'>$250,000</p>
                     <p className='text-neutral-600 text-[12px]'>Active Traders</p>
                 </div>
                 
