@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaRegStar } from 'react-icons/fa'
+import { FaArrowLeft, FaArrowRight, FaRegStar } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
             <p className='leading-[29px] text-[20px] text-neutral-600'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestias ex libero excepturi magnam, expedita aspernatur eveniet odio fuga neque voluptatibus, laboriosam iusto, aperiam exercitationem asperiores reiciendis possimus sunt autem?</p>
            </div>
            <div className='w-full flex justify-center'> 
-            <div className='border flex justify-between items-center p-5 w-full md:w-[70%] h-[100px] rounded-[15px]'>
+            <div className='border border-neutral-300 flex justify-between items-center p-5 w-full md:w-[70%] h-[100px] rounded-[15px]'>
                 <div>
                     <p className='text-green-500 font-semibold text-[22px] md:text-[25px]'>$250,000</p>
                     <p className='text-neutral-600 text-[12px]'>Active Traders</p>
@@ -38,8 +38,12 @@ const Hero = () => {
            </div>
 
            <div className='flex flex-col md:flex-row w-full items-center justify-center gap-2 md:gap-4'>
-            <button className='bg-gradient-to-r from-blue-300 to-blue-700 rounded-md w-[170px]  h-[45px]'>Start Trading Now</button>
-            <button className='border rounded-md w-[150px] md:w-[170px] h-[45px]'>View Live Demo</button>
+            <div className='bg-gradient-to-r from-blue-300 to-blue-700 rounded-md min-w-[170px]  h-[45px] flex items-center gap-2 justify-center'>
+                <button className='text-white font-medium' >Start Trading Now</button>
+                <FaArrowRight className='text-white' />
+            </div>
+            
+            <button className='border rounded-md min-w-[150px] md:min-w-[170px] h-[45px]'>View Live Demo</button>
            </div>
            
         </div>
