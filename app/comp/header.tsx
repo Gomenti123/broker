@@ -1,8 +1,11 @@
 import React from 'react'
+//
 
+
+//border-radius: 16px;
 const Header = () => {
   return (
-    <div className='bg-purple-700 fixed h-[60px] w-[100%] flex justify-between items-center p-2 px-[20px] md:px-[40px]' > 
+    <div className='fixed h-[60px] w-[100%] flex justify-between items-center p-2 px-[20px] md:px-[40px]' style={{backgroundColor: "#29056178", boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)", backdropFilter: "blur(5.5px)", WebkitBackdropFilter: "blur(5.5px)", border: "1px solid rgba(255, 255, 255, 0.3)" }}  > 
       <div>Logo</div>
       <div className='hidden md:flex justify-between gap-2 '>
         <nav>Home</nav>
