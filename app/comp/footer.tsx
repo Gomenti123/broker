@@ -42,7 +42,6 @@ const Footer = () => {
         </div>
       </div>
       <hr className='text-neutral-800' />
-
       <p className='text-neutral-600'>This is afrer the horizontal rule</p>
     </div>
   )
