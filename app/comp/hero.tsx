@@ -12,7 +12,7 @@ const Hero = () => {
   <div> 
 
     <div>
-        <Image className='w-full bg-cover h-screen absolute pt-[60px]' src={img} alt='#' width={100} />
+        <Image className='w-full h-screen absolute pt-[60px] object-cover' src={img} alt='#' width={100} />
 
     </div>
     <div className='flex relative justify-center items-center pt-[150px] h-screen text-white'>
@@ -28,7 +28,7 @@ const Hero = () => {
            
            <div>
              <h1 className='text-[30px] lg:text-[50px] text-grad'>Trade Crypto Like a Pro</h1>
-            <p className='leading-[29px] text-[20px] text-neutral-600'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestias ex libero excepturi magnam, expedita aspernatur eveniet odio fuga neque voluptatibus, laboriosam iusto, aperiam exercitationem asperiores reiciendis possimus sunt autem?</p>
+            <p className='leading-[29px] text-[20px] text-neutral-400'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestias ex libero excepturi magnam, expedita aspernatur eveniet odio fuga neque voluptatibus, laboriosam iusto, aperiam exercitationem asperiores reiciendis possimus sunt autem?</p>
            </div>
            <div className='w-full flex justify-center'> 
             <div className='border border-neutral-300 flex justify-between items-center p-5 w-full md:w-[70%] h-[100px] rounded-[15px]'>
@@ -50,7 +50,7 @@ const Hero = () => {
            </div>
 
            <div className='flex flex-col md:flex-row w-full items-center justify-center gap-2 md:gap-4'>
-            <div className='bg-gradient-to-r from-blue-300 to-blue-700 rounded-md min-w-[170px]  h-[45px] flex items-center gap-2 justify-center'>
+            <div className='bg-gradient-to-r from-blue-300 to-[#030356] rounded-md min-w-[170px]  h-[45px] flex items-center gap-2 justify-center'>
                 <button className='text-white font-medium' >Start Trading Now</button>
                 <FaArrowRight className='text-white' />
             </div>
