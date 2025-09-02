@@ -3,7 +3,7 @@ import React from 'react'
 const Calculator = () => {
   return (
     <div>
-      <div className='flex pt-10 justify-center p-[20px]'>
+      <div className='flex justify-center p-[20px]'>
         <div className='border border-neutral-300 min-h-[500px] rounded-md w-full md:w-[600px] flex flex-col items-center py-[10px] gap-3 '>
 <h1 className='font-medium text-[20px]'>Profit Calculator</h1>
 <div className='p-3 w-full flex flex-col gap-5'>

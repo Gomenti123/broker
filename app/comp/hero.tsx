@@ -1,15 +1,27 @@
+"use client"
+import Image from 'next/image'
 import React from 'react'
 import {FaArrowRight, FaRegStar } from 'react-icons/fa'
+import img from "./imgs/background.jpeg"
+
+
+
 
 const Hero = () => {
   return (
-  <div>
-    <div className='flex justify-center items-center'>
+  <div> 
+
+    <div>
+        <Image className='w-full bg-cover h-screen absolute pt-[60px]' src={img} alt='#' width={100} />
+
+    </div>
+    <div className='flex relative justify-center items-center pt-[150px] h-screen text-white'>
         <div className='text-center w-full px-5 lg:w-[70%] flex flex-col gap-7'>
            <div className='flex justify-center w-full'>
              <div className=' flex items-center justify-center  gap-1 border w-[280px] rounded-full p-1'>
                 <FaRegStar className='text-[#d08b0d]' />
                 <p>#1 Crypto Trading Platform 2025</p>
+                
             </div>
            </div>
                 

@@ -33,7 +33,7 @@ export default function RootLayout({
            <Header />
        
         
-        <div className="pt-[130px]">
+        <div>
            {children}
         </div>
         <Footer />
