@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaArrowLeft, FaArrowRight, FaRegStar } from 'react-icons/fa'
+import {FaArrowRight, FaRegStar } from 'react-icons/fa'
 
 const Hero = () => {
   return (
