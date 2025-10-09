@@ -12,7 +12,7 @@ const Faq = () => {
     const [show2, setShow2] = useState(false)
     const [show3, setShow3] = useState(false)
   return (
- <div className='w-full px-10 py-5 grid grid-cols-2 items-center justify-center mb-[50px] gap-10'>
+ <div className='w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center py-10 md:p-10 gap-[30px]'>
     <div className='col-span-1'>
          <div className='flex items-center gap-1'>
             <div className='w-[40px] h-[3px] bg-amber-600'></div>
@@ -20,10 +20,10 @@ const Faq = () => {
         </div>
         <div className='flex flex-col gap-3'>
             <div>
-                 <p className='text-[45px] leading-[55px]'>General Frequently <br /> <strong className='text-amber-600'>Asked Questions</strong></p>
+                 <p className='text-[25px] md:text-[45px] leading-[30px] md:leading-[55px]'>General Frequently  <strong className='text-amber-600'>Asked <br /> Questions</strong></p>
             </div>
             <div>
-                 <p className='text-[17px]'>There are many variations expectation and uncertainty that might require you to ask.  <br />
+                 <p className='text-[14px] md:text-[17px]'>There are many variations expectation and uncertainty that might require you to ask.  <br />
 
 some questions for clarification. If the few answers we provided didn&apos;t answer your question, click the below button.</p>
             </div>
