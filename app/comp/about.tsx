@@ -12,7 +12,7 @@ const About = () => {
   <div className='pt-10'> 
 <div className='w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center py-10 md:p-10 gap-10'>
     <div>
-        <Image src={img} alt='#' className='w-[500px] h-[500px]' />
+        <Image src={img} alt='#' className='w-[350px] h-[350px] md:w-[500px] md:h-[500px]' />
     </div>
     <div className='w-full flex flex-col gap-1'> 
         <div className='flex items-center gap-1'>

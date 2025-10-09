@@ -16,7 +16,7 @@ const Hero = () => {
         <p className='text-[15px] font-semibold'>A Crypto-Currency Web Platform That Secure Wallets, Give Access To  Investment Of Different Packages With Amazing Return.</p>
     </div>
     <div>
-        <Image src={img} alt='#' className='w-[500px] h-[500px]' />
+        <Image src={img} alt='#' className='w-[350px] h-[350px] md:w-[500px] md:h-[500px]' />
     </div>
 </div>
   
