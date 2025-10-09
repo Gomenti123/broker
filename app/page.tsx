@@ -1,12 +1,14 @@
 import React from 'react'
 import Hero from './comp/hero'
-import Calculator from './comp/calculator'
+import About from './comp/about'
+import Faq from './comp/faq'
 
 const Page = () => {
   return (
-    <div>
+    <div className='px-5 md:px-10'>
       <Hero  />
-      <Calculator />
+      <About />
+      <Faq />
     </div>
   )
 }

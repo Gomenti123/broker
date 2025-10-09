@@ -6,7 +6,7 @@ import React from 'react'
 //style={{backgroundColor: "#29056178", boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)", backdropFilter: "blur(5.5px)", WebkitBackdropFilter: "blur(5.5px)", border: "1px solid rgba(255, 255, 255, 0.3)" 
 const Header = () => {
   return (
-    <div className='fixed h-[60px] w-[100%] flex justify-between items-center p-2 px-[20px] md:px-[40px] z-[1000] bg-[#23103a]' > 
+    <div className='fixed h-[60px] w-[100%] flex justify-between items-center p-2 px-[20px] md:px-[40px] z-[1000] bg-[#121d34]' > 
       <div className='text-white'>Logo</div>
       <div className='hidden md:flex justify-between gap-2 text-white '>
         <nav>Home</nav>
