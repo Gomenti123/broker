@@ -1,7 +1,6 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-import {FaArrowRight, FaRegStar } from 'react-icons/fa'
 import img from "./imgs/01.png"
 import { IoMdCheckmarkCircle } from 'react-icons/io'
 

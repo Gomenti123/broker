@@ -16,7 +16,7 @@ const Faq = () => {
     <div className='col-span-1'>
          <div className='flex items-center gap-1'>
             <div className='w-[40px] h-[3px] bg-amber-600'></div>
-            <p className='text-amber-600 text-[18px] font-semibold'>FAQ's</p>
+            <p className='text-amber-600 text-[18px] font-semibold'>FAQ&apos;s</p>
         </div>
         <div className='flex flex-col gap-3'>
             <div>
