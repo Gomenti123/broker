@@ -25,7 +25,7 @@ const Faq = () => {
             <div>
                  <p className='text-[17px]'>There are many variations expectation and uncertainty that might require you to ask.  <br />
 
-some questions for clarification. If the few answers we provided didn't answer your question, click the below button.</p>
+some questions for clarification. If the few answers we provided didn&apos;t answer your question, click the below button.</p>
             </div>
         </div>
        
