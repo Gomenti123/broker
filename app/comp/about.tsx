@@ -30,7 +30,7 @@ const About = () => {
             </div>
             <div className='flex items-center gap-1'>
                 <IoMdCheckmarkCircle className='text-[25px] text-amber-600' />
-                <p className='text-[16px]'>Take a look at our round up of the best setup.</p>
+                <p className='text-[16px]'>And we will still remain here and keep counting.</p>
             </div>
             <div className='flex items-center gap-1'>
                 <IoMdCheckmarkCircle className='text-[25px] text-amber-600' />
