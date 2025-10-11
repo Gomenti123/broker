@@ -4,7 +4,7 @@ import { MdStar } from 'react-icons/md'
 
 const Testimony = () => {
   return (
-    <div>
+    <div className='pt-5 mt-5'>
       <div className='flex flex-col gap-5 w-full justify-center items-center'>
         <div className='flex gap-1 items-center bg-[#dceaff] text-blue-600 rounded-full px-3 py-1'>
             <CiStar />
