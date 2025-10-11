@@ -7,7 +7,7 @@ const Explore = () => {
         <div className='flex flex-col gap-7'>
           <div className='flex flex-col gap-1'>
              <h1 className='text-amber-600 text-[40px] leading-[40px] font-semibold'>Explore All <br /> Our Products </h1>
-          <p className='text-white text-[20px] leading-[25px]'>Invest in cash Products, trade with leveraged <br /> products or let the experts manage your money.</p>
+          <p className='text-white text-[20px] leading-[25px]'>Invest in cash Products, trade with leveraged products or let the experts manage your money.</p>
           </div>
          
 
@@ -21,8 +21,8 @@ const Explore = () => {
               <div className='font-semibold text-[15px]'>Bitcoin</div>
             </div>
             <div className='md:w-[200px] flex gap-2 items-center h-[50px] bg-white px-4 py-2 rounded-lg text-black'>
-              <div className='bg-green-400 rounded-lg flex items-center justify-center text-[13px] p-1 min-w-[30px] text-white font-semibold h-[30px]'>ETF</div>
-              <div className='font-semibold text-[15px]'>ETFs</div>
+              <div className='bg-green-400 rounded-lg flex items-center justify-center text-[13px] p-1 min-w-[30px] text-white font-semibold h-[30px]'>ETH</div>
+              <div className='font-semibold text-[15px]'>Ethereum</div>
             </div>
             <div className='md:w-[200px] flex gap-2 items-center h-[50px] bg-white px-4 py-2 rounded-lg text-black'>
               <div className='bg-gray-600 rounded-lg flex items-center justify-center text-[13px] p-1 min-w-[30px] text-white font-semibold h-[30px]'>BO</div>
@@ -32,15 +32,15 @@ const Explore = () => {
               <div className='bg-pink-400 rounded-lg flex items-center justify-center text-[13px] p-1 min-w-[30px] text-white font-semibold h-[30px]'>MF</div>
               <div className='font-semibold text-[15px]'>Mutual Funds</div>
             </div>
-            <div className='md:w-[200px] flex gap-2 items-center h-[50px] bg-white px-4 py-2 rounded-lg text-black'>
+            <div className='md:w-[200px] hidden md:flex gap-2 items-center h-[50px] bg-white px-4 py-2 rounded-lg text-black'>
               <div className='bg-yellow-600 rounded-lg flex items-center justify-center text-[13px] p-1 min-w-[30px] text-white font-semibold h-[30px]'>FU</div>
               <div className='font-semibold text-[15px]'>Futures</div>
             </div>
-            <div className='md:w-[200px] flex gap-2 items-center h-[50px] bg-white px-4 py-2 rounded-lg text-black'>
+            <div className='md:w-[200px] hidden md:flex gap-2 items-center h-[50px] bg-white px-4 py-2 rounded-lg text-black'>
               <div className='bg-neutral-500 rounded-lg flex items-center justify-center text-[13px] p-1 min-w-[30px] text-white font-semibold h-[30px]'>COM</div>
               <div className='font-semibold text-[15px]'>Commodities</div>
             </div>
-            <div className='md:w-[200px] flex gap-2 items-center h-[50px] bg-white px-4 py-2 rounded-lg text-black'>
+            <div className='md:w-[200px] hidden md:flex gap-2 items-center h-[50px] bg-white px-4 py-2 rounded-lg text-black'>
               <div className='bg-orange-400 rounded-lg flex items-center justify-center text-[13px] p-1 min-w-[30px] text-white font-semibold h-[30px]'>CDF</div>
               <div className='font-semibold text-[15px]'>CDFs</div>
             </div>
