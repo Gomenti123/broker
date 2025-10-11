@@ -9,8 +9,8 @@ import { IoMdCheckmarkCircle } from 'react-icons/io'
 
 const About = () => {
   return (
-  <div className='pt-10'> 
-<div className='w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center py-10 md:p-10 gap-10'>
+  <div className='pt-10 mt-10'> 
+<div className='w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center py-10 md:p-10 gap-10' >
     <div>
         <Image src={img} alt='#' className='w-[350px] h-[350px] md:w-[500px] md:h-[500px]' />
     </div>
