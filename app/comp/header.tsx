@@ -1,18 +1,9 @@
 "use client"
 import React from 'react'
-import { GiHamburgerMenu } from 'react-icons/gi'
 import logo from "../comp/imgs/logo.png"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
 import Image from 'next/image'
-import { Link } from 'react-scroll'
-
+import Nav from './nav'
+import Link from 'next/link'
 //
 
 
@@ -34,22 +25,13 @@ const Header = () => {
         <button className='border rounded-md w-[90px] h-[35px]'>Sign Up</button>
         <button className='bg-gradient-to-r from-blue-300 to-[#030356] rounded-md w-[90px] shadow-md h-[35px]'>Login</button>
       </div>
+      <div>
+        <Link href={"/signup"} >
+        <button>Sign Up</button></Link>
+      </div>
       <div className='block md:hidden'>
         
-        <DropdownMenu>
-  <DropdownMenuTrigger>
-    <GiHamburgerMenu className='text-[30px]' />
-  </DropdownMenuTrigger>
-  <DropdownMenuContent className='mt-[20px] mr-[10px]'>
-    <DropdownMenuLabel>
-      Navigations</DropdownMenuLabel>
-    <DropdownMenuSeparator />
-    <DropdownMenuItem><Link to='Home' smooth={true} duration={500}>Home</Link></DropdownMenuItem>
-    <DropdownMenuItem><Link to='About' smooth={true} duration={500}>About Us</Link></DropdownMenuItem>
-    <DropdownMenuItem><Link to='Testimonies' smooth={true} duration={500}>Testimonies</Link></DropdownMenuItem>
-    <DropdownMenuItem><Link to='FAQs' smooth={true} duration={500}>FAQs</Link></DropdownMenuItem>
-  </DropdownMenuContent>
-</DropdownMenu>
+     <Nav />
       </div>
     </div>
     </div>
