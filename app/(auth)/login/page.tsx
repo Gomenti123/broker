@@ -26,7 +26,7 @@ const Login = () => {
             </button>
          </form>
          <div className='flex items-center gap-1 w-full justify-center text-[12px]'>
-            <p>Don't have an account? </p>
+            <p>Don&apos;t have an account? </p>
             <Link href={"/signup"} className='italic underline text-blue-400' >Register</Link>
          </div>
          
