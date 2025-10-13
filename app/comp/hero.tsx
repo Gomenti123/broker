@@ -2,13 +2,14 @@
 import Image from 'next/image'
 import React from 'react'
 import img from "./imgs/hero.png"
+import { Element } from 'react-scroll'
 
 
 
 
 const Hero = () => {
   return (
-  <div className='pt-10'> 
+  <Element name='Home' className='pt-10'> 
 <div className='w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center py-10 md:p-10 gap-10'>
     <div className='w-full flex flex-col gap-2 md:gap-1'> 
         <h1 className='text-[18px] md:text-[30px]'>SAFE AND SECURE INVESTMENT </h1>
@@ -20,7 +21,7 @@ const Hero = () => {
     </div>
 </div>
   
-  </div>
+  </Element>
   )
 }
 

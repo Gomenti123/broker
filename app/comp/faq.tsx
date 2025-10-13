@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { FaQuestionCircle } from 'react-icons/fa'
 import { IoIosArrowDown } from 'react-icons/io'
+import { Element } from 'react-scroll'
 
 
 
@@ -12,7 +13,7 @@ const Faq = () => {
     const [show2, setShow2] = useState(false)
     const [show3, setShow3] = useState(false)
   return (
- <div className='w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center py-10 md:p-10 gap-10'>
+ <Element name='FAQs' className='w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center py-10 md:p-10 gap-10'>
     <div className='col-span-1'>
          <div className='flex items-center gap-1'>
             <div className='w-[40px] h-[3px] bg-amber-600'></div>
@@ -81,7 +82,7 @@ some questions for clarification. If the few answers we provided didn&apos;t ans
    
     </div>
     </div>
- </div>
+ </Element>
   )
 }
 

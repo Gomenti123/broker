@@ -1,9 +1,11 @@
+"use client"
 import React from 'react'
 import img from "../comp/imgs/bg3.png"
 import Image from 'next/image'
+import { Element } from 'react-scroll'
 const Explore = () => {
   return (
-    <div className='w-full  py-10 md:p-10 gap-10'>
+    <Element name='Explore' className='w-full  py-10 md:p-10 gap-10'>
         <div className='flex flex-col gap-7'>
           <div className='flex flex-col gap-1'>
              <h1 className='text-amber-600 text-[40px] leading-[40px] font-semibold'>Explore All <br /> Our Products </h1>
@@ -49,7 +51,7 @@ const Explore = () => {
            
           </div>
         </div>
-    </div>
+    </Element>
    
   )
 }

@@ -1,10 +1,12 @@
+"use client"
 import React from 'react'
 import { CiStar } from 'react-icons/ci'
 import { MdStar } from 'react-icons/md'
+import { Element } from 'react-scroll'
 
 const Testimony = () => {
   return (
-    <div className='pt-5 mt-5'>
+    <Element name='Testimonies' className='pt-5 mt-5'>
       <div className='flex flex-col gap-5 w-full '>
         <div className='w-full flex justify-center'>
               <div className='flex gap-1 w-[200px] justify-center items-center bg-[#dceaff] text-blue-600 rounded-full px-3 py-1'>
@@ -42,7 +44,7 @@ const Testimony = () => {
        
         
       </div>
-    </div>
+    </Element>
   )
 }
 

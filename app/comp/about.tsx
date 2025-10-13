@@ -3,13 +3,15 @@ import Image from 'next/image'
 import React from 'react'
 import img from "./imgs/01.png"
 import { IoMdCheckmarkCircle } from 'react-icons/io'
+import { Element } from 'react-scroll'
 
 
 
 
 const About = () => {
   return (
-  <div className='pt-5 mt-5'> 
+    
+  <Element name='About' className='pt-5 mt-5'> 
 <div className='w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center py-10 md:p-10 gap-10' >
     <div>
         <Image src={img} alt='#' className='w-[350px] h-[350px] md:w-[500px] md:h-[500px]' />
@@ -45,7 +47,7 @@ const About = () => {
     
 </div>
   
-  </div>
+  </Element>
   )
 }
 
