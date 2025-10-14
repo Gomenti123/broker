@@ -26,11 +26,10 @@ export const POST = async (req: NextRequest, res: NextResponse) => {
     } else {
       return NextResponse.json({ message: "User not found", status: 400 });
     }
-  } catch (error: any) {
+  } catch (error) {
     return NextResponse.json({
       message: "Error Occured",
       status: 400,
-      error: error.message,
     });
   }
 };
