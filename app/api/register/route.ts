@@ -28,10 +28,12 @@ export const POST = async (req: NextRequest, res: NextResponse) => {
       status: 200,
       data: getD,
     });
-  } catch (error) {
+  } catch (error: any) {
+    // eslint-disable-line @typescript-eslint/no-explicit-any
     return NextResponse.json({
       message: "Error Occured",
       status: 400,
+      error: error.message,
     });
   }
 };

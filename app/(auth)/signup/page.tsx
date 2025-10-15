@@ -3,7 +3,6 @@ import img from "@/app/comp/imgs/logo.png";
 import Link from "next/link";
 import axios from "axios";
 import { redirect } from "next/navigation";
-// const local = process.env.LOCAL as string;
 
 const Signup = async () => {
   const createUser = async (formData: FormData) => {
