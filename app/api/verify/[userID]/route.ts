@@ -5,8 +5,9 @@ import { NextRequest, NextResponse } from "next/server";
 
 export const POST = async (
   req: NextRequest,
+  res: NextResponse,
 
-  { params }: any // eslint-disable-line @typescript-eslint/no-explicit-any
+  { params }: any
 ) => {
   try {
     await dbConfig();
