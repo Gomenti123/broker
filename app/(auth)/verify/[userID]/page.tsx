@@ -11,7 +11,7 @@ import {
 import axios from "axios";
 import { redirect } from "next/navigation";
 
-const Verify = async ({ params }: any) => {
+const Verify = async ({ params }) => {
   const { userID } = await params;
   const handleVerification = async (formData: FormData) => {
     "use server";

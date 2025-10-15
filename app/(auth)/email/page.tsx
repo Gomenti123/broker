@@ -9,7 +9,7 @@ const Page = () => {
           <MdMarkEmailUnread className="text-[50px]" />
         </div>
         <p className="text-[16px] text-neutral-400">
-          We've sent a verification code to your email, check your email to
+          We&apos;ve sent a verification code to your email, check your email to
           verify and activate your account. The link in the email will expire in
           24hrs.
         </p>

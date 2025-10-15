@@ -28,11 +28,10 @@ export const POST = async (req: NextRequest, res: NextResponse) => {
       status: 200,
       data: getD,
     });
-  } catch (error: any) {
+  } catch (error) {
     return NextResponse.json({
       message: "Error Occured",
       status: 400,
-      error: error.message,
     });
   }
 };
