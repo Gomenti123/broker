@@ -8,6 +8,7 @@ const userModel = new Schema(
     password: { type: String, require: true },
     phoneNumber: { type: Number, require: true },
     verify: { type: Boolean, default: false },
+    token: { type: String },
   },
   { timestamps: true }
 );

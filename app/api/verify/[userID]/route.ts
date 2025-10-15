@@ -6,23 +6,32 @@ import { NextRequest, NextResponse } from "next/server";
 export const POST = async (
   req: NextRequest,
 
-  { params }
+  { params }: any
 ) => {
   try {
     await dbConfig();
     const { userID } = await params;
+    const { token } = await req.json();
     const user = await myUserModel.findById(userID);
     if (user) {
-      const getD = await myUserModel.findByIdAndUpdate(
-        userID,
-        { verify: true },
-        { new: true }
-      );
-      return NextResponse.json({
-        message: "User Verified",
-        status: 200,
-        data: getD,
-      });
+      const tokenCheck = user.token === token;
+      if (tokenCheck) {
+        const getD = await myUserModel.findByIdAndUpdate(
+          userID,
+          { verify: true, token: "" },
+          { new: true }
+        );
+        return NextResponse.json({
+          message: "User Verified",
+          status: 200,
+          data: getD,
+        });
+      } else {
+        return NextResponse.json({
+          message: "Incorrect Token",
+          status: 400,
+        });
+      }
     } else {
       return NextResponse.json({
         message: "User Not Found",

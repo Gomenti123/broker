@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcrypt";
 import myUserModel from "@/app/utils/Model/userModel";
 import { sendEmail } from "@/app/utils/email";
+import crypto from "crypto";
 
 export const POST = async (req: NextRequest, res: NextResponse) => {
   try {
@@ -10,12 +11,16 @@ export const POST = async (req: NextRequest, res: NextResponse) => {
     const { name, email, password, phoneNumber } = await req.json();
     const salt = await bcrypt.genSalt(10);
     const hashed = await bcrypt.hash(password, salt);
+    const token = Math.floor(100000 + Math.random() * 900000);
+
+    // console.log(token);
 
     const getD = await myUserModel.create({
       name,
       email,
       password: hashed,
       phoneNumber,
+      token,
     });
     sendEmail(getD);
     return NextResponse.json({
@@ -23,10 +28,11 @@ export const POST = async (req: NextRequest, res: NextResponse) => {
       status: 200,
       data: getD,
     });
-  } catch (error) {
+  } catch (error: any) {
     return NextResponse.json({
       message: "Error Occured",
       status: 400,
+      error: error.message,
     });
   }
 };
