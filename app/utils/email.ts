@@ -3,7 +3,6 @@ const email = process.env.EMAIL as string;
 const password = process.env.PASS as string;
 const LocalLink = process.env.LOCAL as string;
 export const sendEmail = (user: any) => {
-  // eslint-disable-line @typescript-eslint/no-explicit-any
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
