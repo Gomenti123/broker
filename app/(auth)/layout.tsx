@@ -22,14 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-         <div className={`bg-[url("../app/comp/imgs/bg1.png")] bg-center text-white`}>
-           {children}
-        </div>          
-      </body>
-    </html>
+    <div
+      className={`bg-[url("../app/comp/imgs/bg1.png")] bg-center text-white`}
+    >
+      {children}
+    </div>
   );
 }

@@ -31,7 +31,7 @@ export const sendEmail = (user: any) => {
         <p>Hello dear,</p>
         <p>Thank you for registering with us,</p>
       </div>
-      <p>Your verification code is 112345</p>
+      <p>Your verification code is ${user.token}</p>
       <p>
         This is a secure platform made for everyone who want to grow their
         income. We stands to be the best platform so far. Kindly click on the
