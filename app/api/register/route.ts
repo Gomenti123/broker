@@ -44,7 +44,6 @@ export const GET = async () => {
     return NextResponse.json({
       message: "Users Found",
       status: 200,
-      data: getD,
     });
   } catch (error) {
     return NextResponse.json({
