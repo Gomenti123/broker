@@ -1,4 +1,3 @@
-/* eslint-disable  no-explicit-any */
 import { dbConfig } from "@/app/utils/dbConfig";
 import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcrypt";
@@ -28,12 +27,11 @@ export const POST = async (req: NextRequest, res: NextResponse) => {
       status: 200,
       data: getD,
     });
-  } catch (error: any) {
+  } catch (error) {
     // eslint-disable-line @typescript-eslint/no-explicit-any
     return NextResponse.json({
       message: "Error Occured",
       status: 400,
-      error: error.message,
     });
   }
 };

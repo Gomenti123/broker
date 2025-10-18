@@ -1,4 +1,3 @@
-/* eslint-disable  no-explicit-any */
 import { dbConfig } from "@/app/utils/dbConfig";
 import myUserModel from "@/app/utils/Model/userModel";
 import { Request } from "express";
@@ -48,11 +47,10 @@ export const POST = async (req: NextRequest, { params }: any) => {
         status: 400,
       });
     }
-  } catch (error: any) {
+  } catch (error) {
     return NextResponse.json({
       message: "Error Occured",
       status: 400,
-      error: error.message,
     });
   }
 };

@@ -1,4 +1,3 @@
-/* eslint-disable  no-explicit-any */
 import nodemailer from "nodemailer";
 const email = process.env.EMAIL as string;
 const password = process.env.PASS as string;

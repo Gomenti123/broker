@@ -1,7 +1,12 @@
 import axios from "axios";
 import { redirect } from "next/navigation";
 import { toast } from "sonner";
-export const createUser = async ({ name, email, password, phoneNumber }) => {
+export const createUser = async ({
+  name,
+  email,
+  password,
+  phoneNumber,
+}: any) => {
   await axios
     .post("http://localhost:3000/api/register", {
       name,
