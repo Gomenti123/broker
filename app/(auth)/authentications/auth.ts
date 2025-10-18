@@ -1,4 +1,5 @@
 import axios from "axios";
+import { ParamValue } from "next/dist/server/request/params";
 import { redirect } from "next/navigation";
 import { toast } from "sonner";
 export const createUser = async ({ name, email, password, phoneNumber }) => {
@@ -24,7 +25,7 @@ export const createUser = async ({ name, email, password, phoneNumber }) => {
   // console.log(name, email, password, phoneNumber);
 };
 
-export const handleVerification = async (token: string, userID: any) => {
+export const handleVerification = async (token: string, userID) => {
   const link = process.env.LOCAL;
 
   await axios
