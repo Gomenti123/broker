@@ -1,10 +1,10 @@
-import { NextRequest, NextResponse } from "next/server";
-import { dbConfig } from "../utils/dbConfig";
+// import { NextRequest, NextResponse } from "next/server";
+// import { dbConfig } from "../utils/dbConfig";
 
-export const GET = async (req: NextRequest, res: NextResponse) => {
-  await dbConfig();
-  return NextResponse.json({
-    message: "Welcome to default Route",
-    status: 200,
-  });
-};
+// export const GET = async (req: NextRequest, res: NextResponse) => {
+//   await dbConfig();
+//   return NextResponse.json({
+//     message: "Welcome to default Route",
+//     status: 200,
+//   });
+// };
