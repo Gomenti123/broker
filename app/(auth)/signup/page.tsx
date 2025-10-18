@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable  no-explicit-any */
 import Image from "next/image";
 import img from "@/app/comp/imgs/logo.png";
 import Link from "next/link";
