@@ -7,7 +7,6 @@ export const createUser = async ({
   password,
   phoneNumber,
 }: any) => {
-  // @ts-ignore
   await axios
     .post("http://localhost:3000/api/register", {
       name,
@@ -31,7 +30,6 @@ export const createUser = async ({
 };
 
 export const handleVerification = async (token: string, userID: any) => {
-  // @ts-ignore
   const link = process.env.LOCAL;
 
   await axios
