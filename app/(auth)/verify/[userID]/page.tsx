@@ -9,11 +9,14 @@ import { BeatLoader } from "react-spinners";
 import { useDispatch, useSelector } from "react-redux";
 import { setLoading } from "@/app/global/redux";
 import { AlertDemo } from "@/app/comp/alert";
-
+interface iState {
+  loading: boolean;
+  notification: boolean;
+}
 const Verify = () => {
   const [token, setToken] = useState("");
   // const [loading, setLoading] = useState(false);
-  const loading = useSelector((state: any) => {
+  const loading = useSelector((state: iState) => {
     return state.loading;
   });
   const color = "white";

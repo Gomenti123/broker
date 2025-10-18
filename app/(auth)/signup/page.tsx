@@ -10,13 +10,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { BeatLoader } from "react-spinners";
 import { setLoading } from "@/app/global/redux";
 // import { ClipLoader } from "react-spinners";
-
+interface iState {
+  loading: boolean;
+  notification: boolean;
+}
 const Signup = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const loading = useSelector((state: any) => {
+  const loading = useSelector((state: iState) => {
     return state.loading;
   });
   const dispatch = useDispatch();

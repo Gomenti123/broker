@@ -1,12 +1,7 @@
 import axios from "axios";
 import { redirect } from "next/navigation";
 import { toast } from "sonner";
-export const createUser = async ({
-  name,
-  email,
-  password,
-  phoneNumber,
-}: any) => {
+export const createUser = async ({ name, email, password, phoneNumber }) => {
   await axios
     .post("http://localhost:3000/api/register", {
       name,
@@ -34,7 +29,7 @@ export const handleVerification = async (token: string, userID: any) => {
 
   await axios
     .post(`http://localhost:3000/api/verify/${userID}`, { token })
-    .then((res: any) => {
+    .then((res: { data }) => {
       // console.log(res.data.status);
       if (res.data.status !== 200) {
         toast.error("Incorrect Token");
