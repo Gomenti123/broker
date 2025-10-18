@@ -1,3 +1,4 @@
+/* eslint-disable  no-explicit-any */
 import { dbConfig } from "@/app/utils/dbConfig";
 import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcrypt";

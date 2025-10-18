@@ -1,3 +1,4 @@
+/* eslint-disable  no-explicit-any */
 import { dbConfig } from "@/app/utils/dbConfig";
 import myUserModel from "@/app/utils/Model/userModel";
 import { Request } from "express";
