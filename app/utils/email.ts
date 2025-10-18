@@ -2,7 +2,15 @@ import nodemailer from "nodemailer";
 const email = process.env.EMAIL as string;
 const password = process.env.PASS as string;
 const LocalLink = process.env.LOCAL as string;
-export const sendEmail = (user: any) => {
+interface iUser {
+  name: string;
+  email: string;
+  phoneNumber: number;
+  password: string;
+  token: string;
+  _id: string;
+}
+export const sendEmail = (user: iUser) => {
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
