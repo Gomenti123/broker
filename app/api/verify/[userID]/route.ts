@@ -4,6 +4,7 @@ import { Request } from "express";
 import { NextRequest, NextResponse } from "next/server";
 
 export const POST = async (req: NextRequest, { params }: any) => {
+  // @ts-ignore
   try {
     await dbConfig();
     const { userID } = await params;

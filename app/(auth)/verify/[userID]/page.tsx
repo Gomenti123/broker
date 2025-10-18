@@ -14,6 +14,7 @@ const Verify = () => {
   const [token, setToken] = useState("");
   // const [loading, setLoading] = useState(false);
   const loading = useSelector((state: any) => {
+    // @ts-ignore
     return state.loading;
   });
   const color = "white";
