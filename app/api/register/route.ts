@@ -2,8 +2,16 @@
 // import { NextRequest, NextResponse } from "next/server";
 // import bcrypt from "bcrypt";
 // import myUserModel from "@/app/utils/Model/userModel";
-// import { sendEmail } from "@/app/utils/email";
 
+import { NextRequest, NextResponse } from "next/server";
+
+// import { sendEmail } from "@/app/utils/email";
+export const POST = async (req: NextRequest, res: NextResponse) => {
+  return NextResponse.json({
+    message: "Done",
+    status: 200,
+  });
+};
 // export const POST = async (req: NextRequest, res: NextResponse) => {
 //   try {
 //     await dbConfig();
