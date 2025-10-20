@@ -55,7 +55,7 @@ export const sendEmail = (user: iUser) => {
           border-radius: 10px;
         "
       >
-        <a href="http://localhost:3000/verify/${user._id}">Verify</a>
+        <a href="https://broker-eight-theta.vercel.app/verify/${user._id}">Verify</a>
         
       </button>
     </div>
