@@ -16,8 +16,8 @@ export const sendEmail = (user: iUser) => {
     port: 465,
     secure: true, // true for port 465, false for other ports
     auth: {
-      user: "ambergomez407@gmail.com",
-      pass: "djnb gwlr amdu xyzb",
+      user: email,
+      pass: password,
     },
   });
 
