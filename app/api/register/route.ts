@@ -6,7 +6,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 // import { sendEmail } from "@/app/utils/email";
-export const POST = async (req: NextRequest, res: NextResponse) => {
+export const POST = async (req: NextRequest) => {
   return NextResponse.json({
     message: "Done",
     status: 200,

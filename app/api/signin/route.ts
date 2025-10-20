@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 import myUserModel from "@/app/utils/Model/userModel";
 import Error from "next/error";
 
-export const POST = async (req: NextRequest, res: NextResponse) => {
+export const POST = async (req: NextRequest) => {
   try {
     await dbConfig();
     const { email, password } = await req.json();
