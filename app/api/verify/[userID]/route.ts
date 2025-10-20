@@ -2,10 +2,8 @@ import { dbConfig } from "@/app/utils/dbConfig";
 import myUserModel from "@/app/utils/Model/userModel";
 import { Request } from "express";
 import { NextRequest, NextResponse } from "next/server";
-interface iParams {
-  params: { slug: string; userID: string };
-}
-export const POST = async (req: NextRequest, { params }: iParams) => {
+
+export const POST = async (req: NextRequest, { params }: any) => {
   try {
     await dbConfig();
     const { userID } = await params;
