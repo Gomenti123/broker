@@ -25,14 +25,14 @@ export const createUser = async ({ name, email, password, phoneNumber }) => {
   // console.log(name, email, password, phoneNumber);
 };
 
-export const handleVerification = async (token: string, userID) => {
+export const handleVerification = async (token: string, userID: any) => {
   const link = process.env.LOCAL;
 
   await axios
     .post(`https://broker-eight-theta.vercel.app/api/verify/${userID}`, {
       token,
     })
-    .then((res: { data }) => {
+    .then((res: any) => {
       // console.log(res.data.status);
       if (res.data.status !== 200) {
         toast.error("Incorrect Token");
