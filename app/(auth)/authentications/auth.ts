@@ -3,17 +3,12 @@ import { ParamValue } from "next/dist/server/request/params";
 import { redirect } from "next/navigation";
 import { toast } from "sonner";
 export const createUser = async ({ name, email, password, phoneNumber }) => {
-  await axios
-    .post("https://broker-eight-theta.vercel.app/api/register", {
-      name,
-      email,
-      phoneNumber,
-      password,
-    })
-    .then((res) => {
-      // console.log(res.data);
-      redirect("/email");
-    });
+  await axios.post("https://broker-eight-theta.vercel.app/api/register", {
+    name,
+    email,
+    phoneNumber,
+    password,
+  });
   // await fetch("http://localhost:3000/api/register", {
   //   method: "POST",
   //   body: JSON.stringify({ name, email, phoneNumber, password }),

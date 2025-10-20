@@ -28,11 +28,12 @@ export const POST = async (req: NextRequest) => {
       status: 200,
       data: getD,
     });
-  } catch (error) {
+  } catch (error: any) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return NextResponse.json({
       message: "Error Occured",
       status: 400,
+      error: error.message,
     });
   }
 };
@@ -45,10 +46,11 @@ export const GET = async (req: NextRequest) => {
       message: "Users Found",
       status: 200,
     });
-  } catch (error) {
+  } catch (error: any) {
     return NextResponse.json({
       message: "Error Occured",
       status: 400,
+      error: error.message,
     });
   }
 };

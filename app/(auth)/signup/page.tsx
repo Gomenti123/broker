@@ -25,8 +25,10 @@ const Signup = () => {
   const dispatch = useDispatch();
   const create = () => {
     setTimeout(() => {
-      createUser({ name, email, password, phoneNumber });
-      dispatch(setLoading(false));
+      createUser({ name, email, password, phoneNumber }).then(() => {
+        dispatch(setLoading(false));
+        redirect("/email");
+      });
     }, 1000);
   };
   return (
