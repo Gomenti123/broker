@@ -2,15 +2,14 @@ import nodemailer from "nodemailer";
 const email = process.env.EMAIL as string;
 const password = process.env.PASS as string;
 const LocalLink = process.env.LOCAL as string;
-
 export const sendEmail = (user: any) => {
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
     secure: true, // true for port 465, false for other ports
     auth: {
-      user: email,
-      pass: password,
+      user: "ambergomez407@gmail.com",
+      pass: "djnb gwlr amdu xyzb",
     },
   });
 
