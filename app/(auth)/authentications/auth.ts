@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { toast } from "sonner";
 export const createUser = async ({ name, email, password, phoneNumber }) => {
   await axios
-    .post("http://localhost:3000/api/register", {
+    .post("https://broker-eight-theta.vercel.app/api/register", {
       name,
       email,
       phoneNumber,
@@ -29,7 +29,9 @@ export const handleVerification = async (token: string, userID) => {
   const link = process.env.LOCAL;
 
   await axios
-    .post(`http://localhost:3000/api/verify/${userID}`, { token })
+    .post(`https://broker-eight-theta.vercel.app/api/verify/${userID}`, {
+      token,
+    })
     .then((res: { data }) => {
       // console.log(res.data.status);
       if (res.data.status !== 200) {
