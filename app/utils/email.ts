@@ -58,6 +58,8 @@ export const sendEmail = async (user: any) => {
   };
 
   transporter.sendMail(mailOptions, (error) => {
+    console.log("e reach transporter");
+
     if (error) {
       console.error(error);
     } else {
