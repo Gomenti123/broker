@@ -5,7 +5,6 @@ const password = process.env.PASS as string;
 const LocalLink = process.env.LOCAL as string;
 export const sendEmail = async (user: any) => {
   console.log(email, password);
-
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
@@ -66,4 +65,5 @@ export const sendEmail = async (user: any) => {
       console.log("Email sent ");
     }
   });
+  console.log("This is the down ", email, password);
 };
